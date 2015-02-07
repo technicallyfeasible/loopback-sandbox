@@ -1,0 +1,26 @@
+{
+  "name": "Country",
+  "plural": "Countries",
+  "base": "PersistedModel",
+  "properties": {
+		"id": {
+			"type": "string",
+			"generated": false,
+			"id": true
+		},
+		"name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "companies": {
+      "type": "hasAndBelongsToMany",
+      "model": "Company",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}
